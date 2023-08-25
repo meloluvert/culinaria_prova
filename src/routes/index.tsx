@@ -6,7 +6,8 @@ export function RouteSoftware() {
     <Routes>
       <Route path="/" element={<PageLayout />}>
         <Route path="" element={<PageHome />} />
-        <Route path="list" element={<PageList />} />
+        <Route path="titulos" element={<PageHome />} />
+        <Route path="descricao" element={<PageList />} />
       </Route>
     </Routes>
   )

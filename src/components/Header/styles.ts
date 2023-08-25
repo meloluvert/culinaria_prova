@@ -1,44 +1,24 @@
 import styled from "styled-components"
-import { colors } from "../../styles/GlobalStyle"
+import { colors, vars } from "../../styles/GlobalStyle"
+
 
 export const Header = styled.header`
   /* Cabeçalho */
-  border-bottom: 0.4rem solid ${colors.third};
-  display: flex;
-  height: 6rem;
-  picture {
-    margin-left: 0.5rem;
-    padding: 0.5rem;
-    img {
-      height: 100%;
-    }
-  }
-`
-
-export const NavBar = styled.nav`
-  /* Navegação */
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: right;
-  ul {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    li {
-      padding: 1rem;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      a {
-        text-decoration: none;
-        color: var(--black);
-      }
-    }
-    li:hover {
-      background-color: ${colors.secondaryLight};
-    }
+  h1{
+    color: white;
   }
 
+  background-color:${colors.primary};
+  
+  margin-bottom:1rem;
+  margin-left: calc(${vars.size_side_bar} + 1rem); /* Same as the width of the sidebar */
+  padding: 1rem;
+  
+  display: flex;
+  @media (max-width: 1000px){
+    margin-left:calc(100px +1rem);
+    width: calc(100vw - (100px) );
+  }
+
+  
 `

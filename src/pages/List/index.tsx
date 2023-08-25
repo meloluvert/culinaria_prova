@@ -1,16 +1,13 @@
 import * as S from './styles'
-import { dados } from "../../services/dados"
+import {textos} from "../../services/textos"
 import { ComponentCard } from '../../components'
 
 export function List() {
   return (
     <S.Section>
-      {dados.map(item => (
+      {textos.map(item => (
         <ComponentCard
-          key={item.id}
-          data={item.data}
-          mensagem={item.mensagem}
-          titulo={item.titulo}
+          texto={item}
         />
       ))}
     </S.Section>

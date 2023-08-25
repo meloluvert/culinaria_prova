@@ -1,5 +1,11 @@
 import styled from "styled-components"
-
+import { vars } from "../../styles/GlobalStyle"
 export const Main = styled.main`
-  min-height: calc(100vh - 9rem);
+  min-height: 100%;
+  margin-left: ${vars.size_side_bar}; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+  @media (max-width: 1000px){
+    margin-left:100px;
+  }
+
 `
