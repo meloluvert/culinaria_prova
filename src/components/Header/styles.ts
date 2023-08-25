@@ -16,8 +16,14 @@ export const Header = styled.header`
   
   display: flex;
   @media (max-width: 1000px){
+
     margin-left:calc(100px +1rem);
-    width: calc(100vw - (100px) );
+    width:calc(100vw - 100px);
+    position:fixed;
+    right:0;
+    h1{
+      font-size:1rem;
+    }
   }
 
   

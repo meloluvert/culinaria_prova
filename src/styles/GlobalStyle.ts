@@ -7,6 +7,8 @@ export const GlobalStyle = createGlobalStyle`
     outline: 0;
     border: 0;
     box-sizing: border-box;
+
+  font-family:Arial, Helvetica, sans-serif;
   }
 `
 export const colors = {
